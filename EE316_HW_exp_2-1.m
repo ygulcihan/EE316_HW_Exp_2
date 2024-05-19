@@ -7,7 +7,7 @@ B = 3; % Modulation Index
 
 t = linspace(0,50,1000);
 
-%% Sinusoidal m(t)
+%% Sinusoidal
 
 m_t = A_m * cos(2*pi*f_m.*t);
 c_t = cos(2*pi*f_c.*t);
@@ -34,7 +34,7 @@ subtitle("Modulated Signal s(t)");
 xlabel("Time (ms)");
 ylabel("Amplitude (V)");
 
-%% Triangular m(t)
+%% Triangular
 
 m_t = A_m * sawtooth(2*pi*f_m.*t, 1/2);
 c_t = A_c * sawtooth(2*pi*f_c.*t, 1/2);
@@ -61,7 +61,7 @@ subtitle("Modulated Signal s(t)");
 xlabel("Time (ms)");
 ylabel("Amplitude (V)");
 
-%% Square m(t)
+%% Square
 
 m_t = A_m * square(2*pi*f_m.*t);
 c_t = A_c * square(2*pi*f_c.*t);
